@@ -87,7 +87,7 @@ document.addEventListener('keydown', (e) => {
 
 gameInterval = setInterval(draw, 100);
 
-// Use a CSS class for rotation
+// Add rotation effect to the canvas on mouse enter/leave
 const gameCanvas = document.getElementById('game');
 gameCanvas.addEventListener('mouseenter', () => {
   gameCanvas.classList.add('rotate');
