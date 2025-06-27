@@ -94,4 +94,4 @@ gameCanvas.addEventListener('mouseenter', () => {
 });
 gameCanvas.addEventListener('mouseleave', () => {
   gameCanvas.classList.remove('rotate');
-}); 
+});
