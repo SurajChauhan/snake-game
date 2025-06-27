@@ -53,6 +53,15 @@ function draw() {
     ctx.fill();
     ctx.strokeStyle = '#222';
     ctx.stroke();
+    // Draw red cap on the head
+    if (i === 0) {
+      ctx.save();
+      ctx.beginPath();
+      ctx.arc(snake[i].x, snake[i].y - box / 4, box / 3, Math.PI, 2 * Math.PI);
+      ctx.fillStyle = 'red';
+      ctx.fill();
+      ctx.restore();
+    }
   }
 }
 
